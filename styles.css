@@ -1,0 +1,803 @@
+@font-face {
+    font-family: 'LINESeedSansTH';
+    src: url('../fonts/LINESeedSansTH_W_Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeedSansTH';
+    src: url('../fonts/LINESeedSansTH_W_Bd.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'LINESeedSansTH', 'LINE Seed Sans TH', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 80px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section:nth-child(even) {
+  background: linear-gradient(135deg, #fafac3 0%, rgba(75, 130, 195, 0.1) 100%);
+}
+
+.section:nth-child(odd) {
+  background: linear-gradient(135deg, rgba(15, 100, 90, 0.1) 0%, #fafac3 100%);
+}
+
+.section-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #0f645a;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0f645a, #4b82c3);
+  border-radius: 2px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.section.bg0 {
+  background: url("svg/bg0.png") no-repeat center center;
+  background-size: cover;
+}
+
+.section.bg1 {
+  background: url("svg/bg1.png") no-repeat center center;
+  background-size: cover;
+}
+.section.bg2 {
+  background: url("svg/bg2.png") no-repeat center center;
+  background-size: cover;
+}
+.section.bg3 {
+  background: url("svg/bg3.png") no-repeat center center;
+  background-size: cover;
+}
+
+.section.bg4 {
+  background: url("svg/bg4.png") no-repeat center center;
+  background-size: cover;
+}
+.section.bg5 {
+  background: url("svg/bg5.png") no-repeat center center;
+  background-size: cover;
+}
+
+.section.bg6 {
+  background: url("svg/bg6.png") no-repeat center center;
+  background-size: cover;
+}
+
+.section.bg7 {
+  background: url("svg/bg7.png") no-repeat center center;
+  background-size: cover;
+}
+
+
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 2px solid rgba(15, 100, 90, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(15, 100, 90, 0.2);
+}
+
+.feature-card h3 {
+  color: #0f645a;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #0f645a, #4b82c3);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(15, 100, 90, 0.3);
+  margin-top: 2rem;
+}
+
+.agency-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.agency-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.contact-info-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'LINESeedSansTH', sans-serif;
+}
+
+.contact-info-card a {
+  color: inherit;          /* ใช้สีเดียวกับข้อความรอบข้าง */
+  text-decoration: none;   /* ไม่ขีดเส้นใต้ */
+}
+
+.contact-info-card a:hover {
+  text-decoration: underline; /* ถ้าอยากให้มีเอฟเฟกต์ตอน hover */
+}
+
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.contact-list img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(15, 100, 90, 0.5);
+}
+.nav-links li a[href="#home"] {
+  font-weight: bold;
+}
+
+
+/* ----------------------------hero----------------------------------------- */
+
+.hero-header {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-header .overlay {
+  background-color: rgba(0, 0, 0, 0); 
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.org-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.org-logos img {
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.org-logos img:hover {
+  transform: scale(1.5);
+}
+
+.halal-logo img {
+  max-width: 700px; 
+  width: 100%;
+  height: auto;;
+  transition: transform 0.4s ease;
+}
+
+
+
+.halal-logo img:hover {
+  transform: scale(1.3);
+}
+@media (max-width: 768px) {
+  .org-logos {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-header {
+    padding: 40px 10px;
+  }
+}
+
+
+
+/* ------------------- */
+
+
+/* Particle Piece */
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+  pointer-events: none;
+  animation: explode 0.6s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes balloon-pop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(0.5); /* ย่อลงมากกว่าเดิมเล็กน้อย */
+  }
+  60% {
+    transform: scale(1.6); /* พองมากขึ้น */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.logo-bounce {
+  animation: balloon-pop 1s cubic-bezier(0.33, 1, 0.68, 1); /* สมูทและช้าลง */
+}
+
+
+/* คลาสที่ใช้สำหรับ trigger */
+.logo-bounce {
+  animation: balloon-pop 1.6s ease-out;
+}
+
+
+/* ---------------------------end-hero----------------------------------------- */
+
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Halal Section */
+.halal-section {
+  display: flex;
+  padding: 60px 5%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.halal-left {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+}
+
+.halal-left h1 {
+  font-size: 3.5rem;
+  color: #f6a622;
+  margin: 0;
+}
+
+.halal-left h2 {
+  font-size: 1.8rem;
+  color: #2b5a9f;
+  margin: 20px 0 10px;
+  line-height: 1.5;
+}
+
+.halal-left .highlight {
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: #f6a622;
+}
+
+.halal-left .year {
+  color: #3e85d2;
+  font-weight: bold;
+}
+
+.halal-left p {
+  color: #555;
+  font-size: 1.1rem;
+}
+.halal-left h2::after {
+  content: none !important;
+}
+
+.halal-right {
+  flex: 2;
+  position: relative;
+  min-width: 400px;
+}
+
+.halal-circle {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  margin: auto;
+}
+
+.halal-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.item-img {
+  position: absolute;
+  width: 130px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.item-img:hover {
+  transform: scale(1.05);
+}
+
+.item1 { top: 70%; left: 20%; }
+.item2 { top: 60%; left: 10%; }
+.item3 { top: 50%; left: 0%; }
+.item4 { top: 25%; left: 10%; }
+.item5 { top: 10%; left: 35%; }
+.item6 { top: 10%; left: 65%; }
+.item7 { top: 30%; left: 85%; }
+
+/* Header */
+.main-header {
+  background-color: #fdf9c5;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.08); /* ขยายเล็กน้อย */
+}
+
+.logo {
+  height: auto;
+  max-height: 60px;
+  width: auto;
+  max-width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f645a;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #4b82c3;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  font: inherit;
+  color: #0f645a;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 120%;              /* ✅ ชิดลงจากปุ่มมากขึ้น */
+  right: 0;
+  background: #ffffff;
+  border-radius: 12px;    /* ✅ มุมโค้งมากขึ้น */
+  padding: 8px 0;
+  min-width: 200px;       /* ✅ กว้างขึ้น */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* ✅ เงาลึกขึ้น */
+  z-index: 100;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: opacity 0.3s ease;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  color: #0f645a;
+  text-decoration: none;
+  transition: background 0.2s ease, padding-left 0.2s;
+  border-left: 4px solid transparent;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #fdf9c5;
+  border-left: 4px solid #ffb64f;
+  padding-left: 24px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .section h2 {
+    font-size: 2rem;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-circle {
+    display: none;
+  }
+}
+/* ----------------------S2-------------------------- */
+.section#home {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 5%;
+  flex-wrap: wrap;
+}
+
+  .halal-menu-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+.halal-menu-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+.halal-menu-vertical li {
+  list-style: none;
+  width: 100%;
+  height: 80px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s ease;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.halal-menu-vertical li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  z-index: 0;
+  transition: 0.4s ease;
+}
+
+.halal-menu-vertical li:hover::before {
+  opacity: 1;
+}
+
+.halal-menu-vertical li .icon,
+.halal-menu-vertical li .title {
+  position: relative;
+  z-index: 1;
+}
+
+.halal-menu-vertical li .icon ion-icon {
+  font-size: 1.8rem;
+  color: #0f645a;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.halal-menu-vertical li:hover .icon ion-icon {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.halal-menu-vertical li .title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f645a;
+  transition: color 0.4s ease;
+}
+
+.halal-menu-vertical li:hover .title {
+  color: #fff;
+}
+
+/* ---------------------End-S2-------------------------- */
+.site-footer {
+  background: url("svg/footer-bg.svg") no-repeat center center;
+  background-size: cover;
+  color: #000;
+  padding: 60px 5%;
+  font-family: "Kanit", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-right {
+  min-width: 280px;
+  margin-left: auto;     /* ✅ บังคับชิดขวา */
+  text-align: right;     /* ✅ จัดข้อความชิดขวา */
+}
+
+.footer-logo {
+  height: 80px;
+  margin-bottom: 15px;
+  
+}
+
+.footer-left h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-left p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.footer-right h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #000;
+  text-align: left; 
+}
+
+
+.footer-right p {
+  justify-content: flex-end;
+  gap: 8px;
+  text-align: left; 
+}
+
+.footer-right ion-icon {
+  font-size: 1.2rem;
+  color: #fdf9c5;
+  
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-left, .footer-right {
+    align-items: center;
+  }
+
+  .footer-left h3 {
+    font-size: 1rem;
+  }
+}
+.footer-right ion-icon {
+  font-size: 1.2rem;
+  color: #000;  /* ✅ เดิมเป็น #fdf9c5 */
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+  display: none;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #0f645a;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+/* Slide-out menu */
+.mobile-slide-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1.5rem;
+  z-index: 1500;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-slide-menu.open {
+  display: block;
+  transform: translateX(0%);
+}
+
+.mobile-slide-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-slide-menu li {
+  margin-bottom: 1.2rem;
+}
+
+.mobile-slide-menu a {
+  color: #0f645a;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-slide-menu a:hover {
+  color: #4c85c5;
+}
+
+/* Hide desktop nav and show burger on mobile */
+@media (max-width: 991.98px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+}
+.hamburger-btn span {
+  font-size: 2rem;
+  color: #0f645a;
+  transition: 0.3s ease;
+}
+
+/* ----------------------7miti------------------------------ */

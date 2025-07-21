@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSP SOUTH Halal Gateway</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="#home" class="logo-link">
+          <img src="images/logo.png" alt="Logo" class="logo" />
+        </a>
+        <nav class="nav" id="mobileNav">
+          <ul class="nav-links">
+            <li><a href="#home">7 บริการ</a></li>
+            <li class="dropdown">
+              <button class="more-btn">More ▾</button>
+              <ul class="dropdown-menu">
+                <li><a href="#Skills">Halal Skills</a></li>
+                <li><a href="#Science-Hub">Halal Science Hub</a></li>
+                <li><a href="#Consult&Certification">Consult & Cert</a></li>
+                <li><a href="#Tech-Driven">Tech Solutions</a></li>
+                <li><a href="#Scaling">Scaling Innovation</a></li>
+                <li><a href="#Creative">Creative Halal</a></li>
+                <li><a href="#Halal-to-Global">Halal to Global</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="hamburger-btn" id="hamburgerToggle">
+        <span id="hamburgerIcon">☰</span>
+      </button>
+      <div class="mobile-slide-menu" id="mobileSlideMenu">
+        <ul>
+          <li><a href="#home">7 บริการ</a></li>
+          <li><a href="#Skills">Halal Skills</a></li>
+          <li><a href="#Science-Hub">Halal Science Hub</a></li>
+          <li><a href="#Consult&Certification">Consult & Cert</a></li>
+          <li><a href="#Tech-Driven">Tech Solutions</a></li>
+          <li><a href="#Scaling">Scaling Innovation</a></li>
+          <li><a href="#Creative">Creative Halal</a></li>
+          <li><a href="#Halal-to-Global">Halal to Global</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- <div class="hero-header"></div> -->
+    <section class="hero-header" style="background-image: url('images/banner-bg.jpg')">
+      <div class="overlay">
+        <div class="org-logos">
+          <a href="https://www.mhesi.go.th/" target="_blank" title="กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม">
+            <img src="images/logo-mhesi.png" alt="MHESI Logo" />
+          </a>
+          <a href="https://www.rspsouth.or.th/" target="_blank" title="Regional Science Park South">
+            <img src="images/logo-rsp.png" alt="RSP Logo" />
+          </a>
+          <a href="https://www.psusp.net/" target="_blank" title="PSU Science Park">
+            <img src="images/logo-psusp.png" alt="PSUSP Logo" />
+          </a>
+        </div>
+
+        <!-- <div class="halal-logo">
+            <img src="images/logo.png" alt="Halal Gateway Logo" />
+          </div> -->
+
+        <div class="halal-logo">
+          <img id="halalLogo" src="images/logo.png" alt="Halal Gateway Logo" />
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <section class="section bg0" id="home">
+    <div class="halal-left">
+      <h1><span class="highlight">7</span> บริการ</h1>
+      <h2>
+        ขับเคลื่อนอุตสาหกรรม<br />นวัตกรรมฮาลาล<br />ในปี
+        <span class="year">2568</span>
+      </h2>
+      <p>ภายใต้ศูนย์วิทยาศาสตร์ภูมิภาค ภาคใต้</p>
+    </div>
+
+    <div class="halal-menu-columns">
+      <!-- คอลัมน์ซ้าย (4 รายการ) -->
+      <ul class="halal-menu-vertical">
+        <li style="--i: #4c85c5; --j: #649fd9" onclick="scrollToSection('Skills')">
+          <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+          <span class="title">Halal Skills for future service</span>
+        </li>
+        <li style="--i: #4c85c5; --j: #649fd9" onclick="scrollToSection('Science-Hub')">
+          <span class="icon"><ion-icon name="flask-outline"></ion-icon></span>
+          <span class="title">Halal Science Hub</span>
+        </li>
+        <li style="--i: #4c85c5; --j: #649fd9" onclick="scrollToSection('Consult&Certification')">
+          <span class="icon">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </span>
+          <span class="title">Halal Consult & Certification service</span>
+        </li>
+        <li style="--i: #4c85c5; --j: #649fd9" onclick="scrollToSection('Tech-Driven')">
+          <span class="icon">
+            <ion-icon name="construct-outline"></ion-icon>
+          </span>
+          <span class="title">Tech-Driven Halal Solutions</span>
+        </li>
+      </ul>
+
+      <!-- คอลัมน์ขวา (3 รายการ) -->
+      <ul class="halal-menu-vertical">
+        <li style="--i: #4c85c5; --j: #649fd9" onclick="scrollToSection('Scaling')">
+          <span class="icon">
+            <ion-icon name="rocket-outline"></ion-icon>
+          </span>
+          <span class="title">Scaling Halal Innovation</span>
+        </li>
+        <li style="--i: #4c85c5; --j: #649fd9" onclick="scrollToSection('Creative')">
+          <span class="icon"><ion-icon name="bulb-outline"></ion-icon></span>
+          <span class="title">Creative Halal Solutions</span>
+        </li>
+        <li style="--i: #4c85c5; --j: #649fd9" onclick="scrollToSection('Halal-to-Global')">
+          <span class="icon"><ion-icon name="globe-outline"></ion-icon></span>
+          <span class="title">Halal to Global</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section bg1" id="Skills">
+    <div class="islamic-pattern"></div>
+    <div class="section-content">
+      <h2>Halal Skills for future service</h2>
+      <h3>
+        การเสริมสร้างทักษะที่จำเป็นในโลกอนาคต เพื่อความสำเร็จในอุตสาหกรรมฮาลาล
+      </h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>วัตถุประสงค์</h3>
+          <p>
+            เพื่อเสริมสร้างทักษะและศักยภาพของบุคลากรในอุตสาหกรรมฮาลาลของประเทศไทย
+            โดยการพัฒนาทักษะผ่านหลักสูตรต่าง ๆ ที่อุทยานพัฒนา
+            ร่วมกับหน่วยงานพันธมิตร ที่มีความรู้ ความเชี่ยวชาญเฉพาะด้าน
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>บริการ</h3>
+          <li>การให้ความรู้ด้านระบบมาตรฐานฮาลาล และกฎระเบียบที่เกี่ยวข้อง</li>
+          <li>
+            การเข้าถึงผู้เชี่ยวชาญที่พร้อมให้คำปรึกษาและแนะนำในการวางระบบต่าง
+            ๆ ที่จำเป็นสำหรับการขอการรับรอง
+          </li>
+          <li>
+            การช่วยให้ผู้ประกอบการสามารถได้รับสิทธิประโยชน์และแหล่งทุนจากโปรแกรมต่าง
+            ๆ ภายใต้อุทยานวิทยาศาสตร์ภาคใต้ และหน่วยงานเครือข่ายที่เกี่ยวข้อง
+          </li>
+        </div>
+        <div class="feature-card contact-info-card">
+          <div class="agency-header">
+            <img src="assets/logos/oil.png" alt="PSU Logo" class="agency-logo" />
+            <h3>สำนักงานความร่วมมืออุตสาหกรรม (OIL)</h3>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <img src="assets/icons/map-pin.png" alt="ที่อยู่" />
+              <a href="https://maps.app.goo.gl/G8QHjKpFw7Lno38S8" target="_blank">อุทยานวิทยาศาสตร์ ภาคใต้</a>
+            </li>
+            <li>
+              <img src="assets/icons/phone.png" alt="โทรศัพท์" />
+              <span>074-272-508</span>
+            </li>
+            <li>
+              <img src="assets/icons/mail.png" alt="อีเมล" />
+              <a href="mailto:oil.psusp@gmail.com">oil.psusp@gmail.com</a>
+            </li>
+            <li>
+              <img src="assets/icons/facebook.png" alt="Facebook" />
+              <a href="https://www.facebook.com/OILPSU" target="_blank">facebook.com/OILPSU</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg2" id="Science-Hub">
+    <div class="islamic-pattern"></div>
+    <div class="section-content">
+      <h2>Halal Science Hub</h2>
+      <h3>ศูนย์วิจัยและห้องปฏิบัติการเพื่อธุรกิจฮาลาล</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>วัตถุประสงค์</h3>
+          <p>
+            เพื่อยกระถันการให้บริการโดยการพัฒนาโครงสร้างพื้นฐาน Halal Food
+            Maker Space lumsส่งเสริมการเพิ่มมูลค่าให้ผลิตภัณฑ์
+            มวัตกรรมอาหารสาสาล
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>บริการ</h3>
+          <li>
+            พัฒนาดินแบบผลิตภับที่ฮาลาลที่มีคุณภาพและสอดคล้องกับ มาตรฐานฮาลาล
+          </li>
+          <li>
+            การกดสอบมาตรฐานผลิตภับที่กลางและการคณชอบลายเพื่อประเมินความพร้อม
+          </li>
+          <li>บริการวิเคราะห์กลองเพื่อประเมินคุณภาพผลิตภันฑ์</li>
+        </div>
+
+        <div class="feature-card contact-info-card">
+          <div class="agency-header">
+            <img src="assets/logos/sti.png" alt="PSU Logo" class="agency-logo" />
+            <h3>ห้องปฏิบัติการ การทดสอบและโรงงานต้นแบบอุทยานวิทยาศาสตร์ภูมิภาค ภาคใต้</h3>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <img src="assets/icons/map-pin.png" alt="ที่อยู่" />
+              <a href="https://maps.app.goo.gl/G8QHjKpFw7Lno38S8" target="_blank">อุทยานวิทยาศาสตร์ ภาคใต้</a>
+            </li>
+            <li>
+              <img src="assets/icons/phone.png" alt="โทรศัพท์" />
+              <span>080-546-7575</span>
+            </li>
+            <li>
+              <img src="assets/icons/mail.png" alt="อีเมล" />
+              <a href="mailto:ltp.psuscipark@gmail.com">ltp.psuscipark@gmail.com</a>
+            </li>
+            <li>
+              <img src="assets/icons/line.png" alt="Line" />
+              <a href="https://line.me/R/ti/p/@089lxrha" target="_blank">line/LTP.Scipark Official</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      
+    </div>
+  </section>
+
+  <section class="section bg3" id="Consult&Certification">
+    <div class="islamic-pattern"></div>
+    <div class="section-content">
+      <h2>Halal Consult & Certification service</h2>
+      <h3>บริการให้คำปรึกษาและดำเนินการขอรับรองเครื่องหมายฮาลาล</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>วัตถุประสงค์</h3>
+          <p>
+            เพื่อผลักดันให้สินค้าและบริการของผู้ประกอบการได้รับมาตรฐาน ฮาลาลในประเทศไทย
+            และเป็นฐานความพร้อมสู่การเข้าสู่ตลาดฮาลาลสากล
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>บริการ</h3>
+          <li>
+            บริการให้คำปรึกษาแนะนําและถ้าเป็นการช่วยเหลือสํานวยความสะดวกในการในขอรับรองมาตรฐาน
+            สาลาลต่อสำนักงานคณะกรรมการกลายดิлазишта ประเทศไทย
+          </li>
+        </div>
+        <div class="feature-card contact-info-card">
+          <div class="agency-header">
+            <img src="assets/logos/psubic.png" alt="PSU Logo" class="agency-logo" />
+            <h3>ศูนย์บ่มเพาะวิสาหกิจ อุทยานวิทยาศาสตร์ มหาวิทยาลัยสงขลานครินทร์</h3>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <img src="assets/icons/map-pin.png" alt="ที่อยู่" />
+              <a href="https://maps.app.goo.gl/G8QHjKpFw7Lno38S8" target="_blank">อุทยานวิทยาศาสตร์ ภาคใต้</a>
+            </li>
+            <li>
+              <img src="assets/icons/phone.png" alt="โทรศัพท์" />
+              <span>081-957-5851 ,074-272-507</span>
+            </li>
+            <li>
+              <img src="assets/icons/mail.png" alt="อีเมล" />
+              <a href="mailto:psubic.psusp@gmail.com">psubic.psusp@gmail.com</a>
+            </li>
+            <li>
+              <img src="assets/icons/facebook.png" alt="Facebook" />
+              <a href="https://www.facebook.com/psubic.psusp" target="_blank">facebook.com/psubic.psusp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg4" id="Tech-Driven">
+    <div class="islamic-pattern"></div>
+    <div class="section-content">
+      <h2>Tech-Driven Halal Solutions</h2>
+      <h3>การขับเคลื่อนเทคโนโลยีและนวัตกรรมเพื่อยกระดับธุรกิจฮาลาล</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>วัตถุประสงค์</h3>
+          <p>เพื่อผลักดันการนํางานวิจัยไปใช้ประโยชน์ ยกระดับอุตสาหกรรม ฮาลาลด้วยนวัตกรรม
+            เพิ่มขีดความสามารถในการแข่งขันในตลาดโลก</p>
+        </div>
+        <div class="feature-card">
+          <h3>บริการ</h3>
+          <li>
+            การพัฒนาแนวคิดธุรกิจ
+          </li>
+          <li>
+            การพัฒนารายงานศึกษาความเป็นไปได้
+          </li>
+          <li>การพัฒนาต่อยอดเทคโนโลยี และผลักดันการบ้านวัตกรรม ไปใช้ในธุรกิจฮาลาล</li>
+        </div>
+        <div class="feature-card contact-info-card">
+          <div class="agency-header">
+            <img src="assets/logos/ipop.png" alt="PSU Logo" class="agency-logo" />
+            <h3>ศูนย์ทรัพย์สินทางปัญญา อุทยานวิทยาศาสตร์ มหาวิทยาลัยสงขลานครินทร์</h3>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <img src="assets/icons/map-pin.png" alt="ที่อยู่" />
+              <a href="https://maps.app.goo.gl/G8QHjKpFw7Lno38S8" target="_blank">อุทยานวิทยาศาสตร์ ภาคใต้</a>
+            </li>
+            <li>
+              <img src="assets/icons/phone.png" alt="โทรศัพท์" />
+              <span>0-7428-9206-10</span>
+            </li>
+            <li>
+              <img src="assets/icons/mail.png" alt="อีเมล" />
+              <a href="mailto:ipop.psusp@gmail.com">ipop.psusp@gmail.com</a>
+            </li>
+            <li>
+              <img src="assets/icons/facebook.png" alt="Facebook" />
+              <a href="https://www.facebook.com/ipop.psu" target="_blank">facebook.com/ipop.psu</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <!-- <a href="#Halal-to-Global" class="cta-button">สมัครรับการรับรอง</a> -->
+    </div>
+  </section>
+
+  <section class="section bg5" id="Scaling">
+    <div class="islamic-pattern"></div>
+    <div class="section-content">
+      <h2>Scaling Halal Innovation</h2>
+      <h3>การขยายโอกาสนวัตกรรมเพื่อธุรกิจฮาลาลที่ยั่งยืน</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>วัตถุประสงค์</h3>
+          <p>เพื่อสนันสนุนผู้ประกอบการธุรกิจฮาลาลในการขยายตลาด สร้างมูลค่าเพิ่ม และเติบโตอย่างก้าวกระโดด (exponential
+            growth)</p>
+        </div>
+        <div class="feature-card">
+          <h3>บริการ</h3>
+          <li>
+            กิจกรรมสัมมนาเพื่อการต่อขออธุรกิจ
+          </li>
+          <li>
+            การเจรจาต่อรองกับนักลงทุนหรือคู่ค้าทางธุรกิจด้านฮาลาล
+          </li>
+          <li>เข้ากันแหล่งเงินทุนสนับสนุนผ่านกลไกการขยายธุรกิจ นวัตกรรม สำหรับผลิตหรือบริการด้านฮาลาล</li>
+        </div>
+        <div class="feature-card contact-info-card">
+          <div class="agency-header">
+            <img src="assets/logos/reg.png" alt="PSU Logo" class="agency-logo" />
+            <h3>แผนงานโครงโครงการนวัตกรรมแบบเปิดภูมิภาคใต้</h3>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <img src="assets/icons/map-pin.png" alt="ที่อยู่" />
+              <a href="https://maps.app.goo.gl/G8QHjKpFw7Lno38S8" target="_blank">อุทยานวิทยาศาสตร์ ภาคใต้</a>
+            </li>
+            <li>
+
+              <img src="assets/icons/phone.png" alt="โทรศัพท์" />
+              <span>0-7427-2506</span>
+            </li>
+            <li>
+              <img src="assets/icons/mail.png" alt="อีเมล" />
+              <a href="mailto:openinnovation.psu@gmail.com">openinnovation.psu@gmail.com</a>
+            </li>
+            <li>
+              <img src="assets/icons/facebook.png" alt="Facebook" />
+              <a href="https://www.facebook.com/OpenInnovationSouthern"
+                target="_blank">facebook.com/OpenInnovationSouthern</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+  </section>
+
+  <section class="section bg6" id="Creative">
+    <div class="islamic-pattern"></div>
+    <div class="section-content">
+      <h2>Creative Halal Solutions</h2>
+      <h3>การสร้างสรรค์งานออกแบบเพื่อธุรกิจฮาลาล</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>วัตถุประสงค์</h3>
+          <p>เพื่อเพิ่มมูลค่าให้สินค้าและบริการ ผ่านสร้างสรรค์งานออกแบบ
+            ที่ผสานอัตลักษณ์มุสลิมของภาคได้ให้เข้ากับสินค้าและบริการ</p>
+        </div>
+        <div class="feature-card">
+          <h3>บริการ</h3>
+          <li>
+            การต่อยอดและสร้างมูลค่าเพิ่มให้ผลิตภัณฑ์ ธุรกิจ และบริการ
+          </li>
+          <li>
+            ส่งเสริมห้เกิดกระบวนการพัฒนางานออกแบบอย่างสร้างสรรค์
+          </li>
+          <li>สนับสนุนและเชื่อมโยงผลิดะท้อนที่สร้างสรรค์สู่ตลาดในระกัน ประเทศและระดับนานาชาติ</li>
+        </div>
+        <div class="feature-card contact-info-card">
+          <div class="agency-header">
+            <img src="assets/logos/idc.png" alt="PSU Logo" class="agency-logo" />
+            <h3>ศูนย์นวัตกรรมการออกแบบ</h3>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <img src="assets/icons/map-pin.png" alt="ที่อยู่" />
+              <a href="https://maps.app.goo.gl/G8QHjKpFw7Lno38S8" target="_blank">อุทยานวิทยาศาสตร์ ภาคใต้</a>
+            </li>
+            <li>
+              <img src="assets/icons/phone.png" alt="โทรศัพท์" />
+              <span>0-7485-9524</span>
+            </li>
+            <li>
+              <img src="assets/icons/mail.png" alt="อีเมล" />
+              <a href="mailto:idc.psusp@gmail.com">idc.psusp@gmail.com</a>
+            </li>
+            <li>
+              <img src="assets/icons/facebook.png" alt="Facebook" />
+              <a href="https://www.facebook.com/IDCPSUSP/" target="_blank">facebook.com/IDCPSUSP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section class="section bg7" id="Halal-to-Global">
+    <div class="islamic-pattern"></div>
+    <div class="section-content">
+      <h2>Halal to Global</h2>
+      <h3>การเชื่อมโยงผู้ประกอบการไทยสู่ตลาดฮาลาลโลก</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>วัตถุประสงค์</h3>
+          <p>เพื่อส่งเสริมผู้ประกอบการและสินค้าโดยให้เป็นที่ยอมรับในตลาดโลก โดยการพัฒนาคุณภาพสินค้า
+            การสร้างแบรนด์และการเข้าถึงช่องทางการตลาดที่ หลากหลาย เพื่อขยายโอกาสและสร้างความเชื่อมั่นในระดับสากล</p>
+        </div>
+        <div class="feature-card">
+          <h3>บริการ</h3>
+          <li>
+            ให้คำปรึกษาและเตรียมความพร้อนธุรกิจเพื่อเข้าสู่ตลาดฮาลาลโลก
+          </li>
+          <li>
+            บริการฐานข้อมูลขั้นตอนการส่งออกสินค้าสู่ตลาดฮาลาลสากล
+          </li>
+          <li>การสร้างกลยุทธ์การตลาด</li>
+          <li>การเชื่อมโยงตลาดที่เหมาะสม เพื่อเพิ่มโอการส่งออกและศักยภาพ การแข่งขันของผู้ประกอบการไทยสู่ตลาดฮาลาลโลก
+          </li>
+        </div>
+        <div class="feature-card contact-info-card">
+          <div class="agency-header">
+            <img src="assets/logos/psubic.png" alt="PSU Logo" class="agency-logo" />
+            <h3>ศูนย์บ่มเพาะวิสาหกิจ อุทยานวิทยาศาสตร์ มหาวิทยาลัยสงขลานครินทร์</h3>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <img src="assets/icons/map-pin.png" alt="ที่อยู่" />
+              <a href="https://maps.app.goo.gl/G8QHjKpFw7Lno38S8" target="_blank">อุทยานวิทยาศาสตร์ ภาคใต้</a>
+            </li>
+            <li>
+              <img src="assets/icons/phone.png" alt="โทรศัพท์" />
+              <span>081-957-5851 ,074-272-507</span>
+            </li>
+            <li>
+              <img src="assets/icons/mail.png" alt="อีเมล" />
+              <a href="mailto:psubic.psusp@gmail.com">psubic.psusp@gmail.com</a>
+            </li>
+            <li>
+              <img src="assets/icons/facebook.png" alt="Facebook" />
+              <a href="https://www.facebook.com/psubic.psusp" target="_blank">facebook.com/psubic.psusp</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <!-- <a href="#Halal-to-Global" class="cta-button">สมัครรับการรับรอง</a> -->
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- ฝั่งซ้าย -->
+      <div class="footer-left">
+        <img src="images/logo-rsp.png" alt="RSP Logo" class="footer-logo" />
+        <h3>อุทยานวิทยาศาสตร์ภูมิภาค ภาคใต้ (RSP South)</h3>
+        <p>
+          อาคารอำนวยการอุทยานวิทยาศาสตร์ภูมิภาค ภาคใต้ (จังหวัดสงขลา)<br />
+          มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่ (ส่วนขยาย)<br />
+          หมู่ที่ 6 ตำบลทุ่งใหญ่ อำเภอหาดใหญ่ จังหวัดสงขลา 90110
+        </p>
+      </div>
+
+      <!-- ฝั่งขวา -->
+      <div class="footer-right">
+        <h4>CONTACT US</h4>
+        <p><ion-icon name="call-outline"></ion-icon> 0 7427 2507</p>
+        <p>
+          <ion-icon name="mail-outline"></ion-icon> psubic.psusp@gmail.com
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
