@@ -22,6 +22,9 @@ body {
   font-family: 'LINESeedSansTH', 'LINE Seed Sans TH', sans-serif;
   overflow-x: hidden;
 }
+#hero {
+  scroll-margin-top: 80px; 
+}
 
 /* Sections */
 .section {
