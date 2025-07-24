@@ -278,6 +278,20 @@ body {
   transition: transform 0.4s ease;
 }
 
+@media (max-width: 767.98px) {
+  .org-logos {
+    flex-direction: row;   /* ✅ คงแนวนอน */
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: block;
+    
+  }
+
+  .org-logos img {
+    max-height: 50px;
+  }
+}
 
 
 .halal-logo img:hover {
