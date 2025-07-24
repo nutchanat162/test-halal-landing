@@ -19,15 +19,15 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="#home" class="logo-link">
+        <a href="#hero" class="logo-link">
           <img src="images/logo.png" alt="Logo" class="logo" />
         </a>
         <nav class="nav" id="mobileNav">
           <ul class="nav-links">
             <li><a href="#home">7 บริการ</a></li>
             <li class="dropdown">
-              <button class="more-btn">More ▾</button>
-              <ul class="dropdown-menu">
+              <button class="more-btn" id="moreButton">More ▾</button>
+              <ul class="dropdown-menu" id="dropdownMenu">
                 <li><a href="#Skills">Halal Skills</a></li>
                 <li><a href="#Science-Hub">Halal Science Hub</a></li>
                 <li><a href="#Consult&Certification">Consult & Cert</a></li>
@@ -35,8 +35,10 @@
                 <li><a href="#Scaling">Scaling Innovation</a></li>
                 <li><a href="#Creative">Creative Halal</a></li>
                 <li><a href="#Halal-to-Global">Halal to Global</a></li>
+                <li><a href="#footer">Contact us</a></li>
               </ul>
             </li>
+
           </ul>
         </nav>
       </div>
@@ -53,14 +55,16 @@
           <li><a href="#Scaling">Scaling Innovation</a></li>
           <li><a href="#Creative">Creative Halal</a></li>
           <li><a href="#Halal-to-Global">Halal to Global</a></li>
+          <li><a href="#footer">Contact us</a></li>
         </ul>
       </div>
     </header>
 
     <!-- <div class="hero-header"></div> -->
-    <section class="hero-header" style="background-image: url('images/banner-bg.jpg')">
+    <section class="hero-header" id="hero" style="background-image: url('images/banner-bg.jpg')">
       <div class="overlay">
         <div class="org-logos">
+
           <a href="https://www.mhesi.go.th/" target="_blank" title="กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม">
             <img src="images/logo-mhesi.png" alt="MHESI Logo" />
           </a>
@@ -72,9 +76,7 @@
           </a>
         </div>
 
-        <!-- <div class="halal-logo">
-            <img src="images/logo.png" alt="Halal Gateway Logo" />
-          </div> -->
+        <br>
 
         <div class="halal-logo">
           <img id="halalLogo" src="images/logo.png" alt="Halal Gateway Logo" />
@@ -87,10 +89,10 @@
     <div class="halal-left">
       <h1><span class="highlight">7</span> บริการ</h1>
       <h2>
-        ขับเคลื่อนอุตสาหกรรม<br />นวัตกรรมฮาลาล<br />ในปี
-        <span class="year">2568</span>
+        ขับเคลื่อนอุตสาหกรรม<br />
+        <span class="year">นวัตกรรมฮาลาล</span>
       </h2>
-      <p>ภายใต้ศูนย์วิทยาศาสตร์ภูมิภาค ภาคใต้</p>
+      <p>ภายใต้อุทยานวิทยาศาสตร์ภูมิภาค ภาคใต้ </p>
     </div>
 
     <div class="halal-menu-columns">
@@ -155,6 +157,7 @@
         </div>
         <div class="feature-card">
           <h3>บริการ</h3>
+          <ul class="feature-list">
           <li>การให้ความรู้ด้านระบบมาตรฐานฮาลาล และกฎระเบียบที่เกี่ยวข้อง</li>
           <li>
             การเข้าถึงผู้เชี่ยวชาญที่พร้อมให้คำปรึกษาและแนะนำในการวางระบบต่าง
@@ -164,6 +167,7 @@
             การช่วยให้ผู้ประกอบการสามารถได้รับสิทธิประโยชน์และแหล่งทุนจากโปรแกรมต่าง
             ๆ ภายใต้อุทยานวิทยาศาสตร์ภาคใต้ และหน่วยงานเครือข่ายที่เกี่ยวข้อง
           </li>
+          </ul>
         </div>
         <div class="feature-card contact-info-card">
           <div class="agency-header">
@@ -201,6 +205,7 @@
       <h3>ศูนย์วิจัยและห้องปฏิบัติการเพื่อธุรกิจฮาลาล</h3>
       <div class="feature-grid">
         <div class="feature-card">
+          
           <h3>วัตถุประสงค์</h3>
           <p>
             เพื่อยกระถันการให้บริการโดยการพัฒนาโครงสร้างพื้นฐาน Halal Food
@@ -210,6 +215,7 @@
         </div>
         <div class="feature-card">
           <h3>บริการ</h3>
+          <ul class="feature-list">
           <li>
             พัฒนาดินแบบผลิตภับที่ฮาลาลที่มีคุณภาพและสอดคล้องกับ มาตรฐานฮาลาล
           </li>
@@ -217,6 +223,7 @@
             การกดสอบมาตรฐานผลิตภับที่กลางและการคณชอบลายเพื่อประเมินความพร้อม
           </li>
           <li>บริการวิเคราะห์กลองเพื่อประเมินคุณภาพผลิตภันฑ์</li>
+          </ul>
         </div>
 
         <div class="feature-card contact-info-card">
@@ -244,8 +251,8 @@
             </li>
           </ul>
         </div>
-        </div>
-      
+      </div>
+
     </div>
   </section>
 
@@ -264,10 +271,12 @@
         </div>
         <div class="feature-card">
           <h3>บริการ</h3>
+          <ul class="feature-list">
           <li>
             บริการให้คำปรึกษาแนะนําและถ้าเป็นการช่วยเหลือสํานวยความสะดวกในการในขอรับรองมาตรฐาน
             สาลาลต่อสำนักงานคณะกรรมการกลายดิлазишта ประเทศไทย
           </li>
+          </ul>
         </div>
         <div class="feature-card contact-info-card">
           <div class="agency-header">
@@ -311,6 +320,7 @@
         </div>
         <div class="feature-card">
           <h3>บริการ</h3>
+          <ul class="feature-list">
           <li>
             การพัฒนาแนวคิดธุรกิจ
           </li>
@@ -318,6 +328,7 @@
             การพัฒนารายงานศึกษาความเป็นไปได้
           </li>
           <li>การพัฒนาต่อยอดเทคโนโลยี และผลักดันการบ้านวัตกรรม ไปใช้ในธุรกิจฮาลาล</li>
+        </ul>
         </div>
         <div class="feature-card contact-info-card">
           <div class="agency-header">
@@ -364,6 +375,7 @@
         </div>
         <div class="feature-card">
           <h3>บริการ</h3>
+          <ul class="feature-list">
           <li>
             กิจกรรมสัมมนาเพื่อการต่อขออธุรกิจ
           </li>
@@ -371,6 +383,7 @@
             การเจรจาต่อรองกับนักลงทุนหรือคู่ค้าทางธุรกิจด้านฮาลาล
           </li>
           <li>เข้ากันแหล่งเงินทุนสนับสนุนผ่านกลไกการขยายธุรกิจ นวัตกรรม สำหรับผลิตหรือบริการด้านฮาลาล</li>
+        </ul>
         </div>
         <div class="feature-card contact-info-card">
           <div class="agency-header">
@@ -416,6 +429,7 @@
         </div>
         <div class="feature-card">
           <h3>บริการ</h3>
+          <ul class="feature-list">
           <li>
             การต่อยอดและสร้างมูลค่าเพิ่มให้ผลิตภัณฑ์ ธุรกิจ และบริการ
           </li>
@@ -423,6 +437,7 @@
             ส่งเสริมห้เกิดกระบวนการพัฒนางานออกแบบอย่างสร้างสรรค์
           </li>
           <li>สนับสนุนและเชื่อมโยงผลิดะท้อนที่สร้างสรรค์สู่ตลาดในระกัน ประเทศและระดับนานาชาติ</li>
+        </ul>
         </div>
         <div class="feature-card contact-info-card">
           <div class="agency-header">
@@ -465,6 +480,7 @@
         </div>
         <div class="feature-card">
           <h3>บริการ</h3>
+          <ul class="feature-list">
           <li>
             ให้คำปรึกษาและเตรียมความพร้อนธุรกิจเพื่อเข้าสู่ตลาดฮาลาลโลก
           </li>
@@ -473,7 +489,7 @@
           </li>
           <li>การสร้างกลยุทธ์การตลาด</li>
           <li>การเชื่อมโยงตลาดที่เหมาะสม เพื่อเพิ่มโอการส่งออกและศักยภาพ การแข่งขันของผู้ประกอบการไทยสู่ตลาดฮาลาลโลก
-          </li>
+          </li></ul>
         </div>
         <div class="feature-card contact-info-card">
           <div class="agency-header">
@@ -508,7 +524,7 @@
   </section>
 
   <footer class="site-footer">
-    <div class="footer-container">
+    <div class="footer-container" id="footer">
       <!-- ฝั่งซ้าย -->
       <div class="footer-left">
         <img src="images/logo-rsp.png" alt="RSP Logo" class="footer-logo" />
@@ -523,9 +539,9 @@
       <!-- ฝั่งขวา -->
       <div class="footer-right">
         <h4>CONTACT US</h4>
-        <p><ion-icon name="call-outline"></ion-icon> 0 7427 2507</p>
+        <p><ion-icon name="call-outline"></ion-icon> 074-272-504</p>
         <p>
-          <ion-icon name="mail-outline"></ion-icon> psubic.psusp@gmail.com
+          <ion-icon name="mail-outline"></ion-icon> stp.psusp@gmail.com
         </p>
       </div>
     </div>

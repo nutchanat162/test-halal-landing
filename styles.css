@@ -150,6 +150,19 @@ body {
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
+.feature-list {
+  padding-left: 1.2rem;     /* ✅ มีระยะห่างซ้ายเล็กน้อย */
+  margin: 0;
+  list-style-type: disc;    /* ✅ ใช้ bullet แบบปกติ */
+  text-align: left;         /* ✅ ชิดซ้าย */
+}
+
+.feature-list li {
+  margin-bottom: 0.75rem;   /* ✅ เว้นบรรทัดแต่ละรายการ */
+  color: #333;
+  line-height: 1.5;
+  font-size: 1rem;
+}
 
 .cta-button {
   display: inline-block;
@@ -178,7 +191,7 @@ body {
 }
 
 .contact-info-card {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -186,12 +199,12 @@ body {
 }
 
 .contact-info-card a {
-  color: inherit;          /* ใช้สีเดียวกับข้อความรอบข้าง */
-  text-decoration: none;   /* ไม่ขีดเส้นใต้ */
+  color: inherit;          
+  text-decoration: none;   
 }
 
 .contact-info-card a:hover {
-  text-decoration: underline; /* ถ้าอยากให้มีเอฟเฟกต์ตอน hover */
+  text-decoration: underline;
 }
 
 
@@ -237,7 +250,6 @@ body {
 
 .hero-header .overlay {
   background-color: rgba(0, 0, 0, 0); 
-  padding: 40px 20px;
   border-radius: 12px;
 }
 
@@ -250,7 +262,7 @@ body {
 }
 
 .org-logos img {
-  height: 60px;
+  height: 110px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -496,13 +508,13 @@ html {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 120%;              /* ✅ ชิดลงจากปุ่มมากขึ้น */
+  top: 120%;
   right: 0;
   background: #ffffff;
-  border-radius: 12px;    /* ✅ มุมโค้งมากขึ้น */
+  border-radius: 12px;
   padding: 8px 0;
-  min-width: 200px;       /* ✅ กว้างขึ้น */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* ✅ เงาลึกขึ้น */
+  min-width: 200px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   z-index: 100;
   border: 1px solid rgba(0, 0, 0, 0.06);
   transition: opacity 0.3s ease;
@@ -511,6 +523,7 @@ html {
 .dropdown-menu.open {
   display: block;
 }
+
 
 .dropdown-menu li {
   list-style: none;
@@ -532,9 +545,6 @@ html {
   padding-left: 24px;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -666,8 +676,8 @@ html {
 
 .footer-right {
   min-width: 280px;
-  margin-left: auto;     /* ✅ บังคับชิดขวา */
-  text-align: right;     /* ✅ จัดข้อความชิดขวา */
+  margin-left: auto;     
+  text-align: right;     
 }
 
 .footer-logo {
@@ -693,6 +703,7 @@ html {
   font-weight: bold;
   color: #000;
   text-align: left; 
+  text-decoration: none;
 }
 
 
@@ -725,7 +736,8 @@ html {
 }
 .footer-right ion-icon {
   font-size: 1.2rem;
-  color: #000;  /* ✅ เดิมเป็น #fdf9c5 */
+  color: #000;  
+  text-decoration: none;
 }
 
 /* Hamburger Button */

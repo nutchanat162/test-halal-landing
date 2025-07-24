@@ -41,17 +41,35 @@
     item.style.setProperty('--angle', angle);
   });
 
-    const btn = document.querySelector(".more-btn");
-  const menu = document.querySelector(".dropdown-menu");
+const btn = document.querySelector(".more-btn");
+const menu = document.querySelector(".dropdown-menu");
+const dropdown = document.querySelector(".dropdown");
 
-  btn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    menu.classList.toggle("open");
-  });
+let hoverTimeout;
 
-  window.addEventListener("click", () => {
+// ✅ Click: toggle dropdown
+btn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  menu.classList.toggle("open");
+});
+
+// ✅ Hover เข้า: แสดง dropdown
+dropdown.addEventListener("mouseenter", () => {
+  clearTimeout(hoverTimeout);
+  menu.classList.add("open");
+});
+
+// ✅ Hover ออก: รอแล้วปิด
+dropdown.addEventListener("mouseleave", () => {
+  hoverTimeout = setTimeout(() => {
     menu.classList.remove("open");
-  });
+  }, 150); // เวลารอเมาส์หลุดออก (กันหลุดเร็วเกิน)
+});
+
+// ✅ Click ภายนอก: ปิด dropdown
+window.addEventListener("click", () => {
+  menu.classList.remove("open");
+});
 
   document.addEventListener('DOMContentLoaded', function () {
   const hamburger = document.getElementById('hamburgerToggle');
